@@ -1,0 +1,246 @@
+:root{
+    --blue:#3498db;
+    --dark-blue:#2980b9;
+    --red:#e74c3c;
+    --dark-red:#c0392b;
+    --black:#333;
+    --white:#fff;
+    --light-bg:#eee;
+    --box-shadow:0 5px 10px rgba(0,0,0,-1);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+*::-webkit-scrollbar{
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+}
+
+.form-container{
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container form{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+}
+
+form h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.form-container form .box{
+    width: 95%;
+    border-radius: 5px;
+    padding: 12px 14px;
+    font-size: 18px;
+    color: var(--black);
+    margin: 10px 0;
+    background-color: var(--light-bg);
+}
+
+.btn,
+.delete-btn{
+    width: 90%;
+    
+    padding: 10px 30px;
+    color: var(--white);
+    
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.btn{
+    background-color: var(--blue);
+}
+
+.btn:hover{
+    background-color: var(--dark-blue);
+}
+
+.delete-btn{
+    background-color: var(--red);
+}
+
+.delete-btn:hover{
+    background-color: var(--dark-red);
+}
+
+.message{
+    margin: 5px 0;
+    width: 80%;
+    border-right: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+.form-container form p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--black);
+  }
+  
+  .form-container form p a {
+    color: var(--red);
+  }
+  
+  .form-container form p a:hover {
+    text-decoration: underline;
+  }
+
+  p a {
+    color: var(--red);
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+
+  .container{
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container .profile{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+  }
+
+  .container .profile img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+
+  .container .profile h3{
+    color: var(--black);
+    margin: 5px 0;
+    font-size: 20px;
+  }
+
+  .container .profile .btn , .delete-btn{
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .container .profile p{
+    margin-top: 15px;
+    color: var(--black);
+    font-size: 17px;
+  }
+
+#updateprofile{
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+#updateprofile form{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+}
+
+#updateprofile img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+#updateprofile .flex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.inputbox{
+  width: 49%;
+
+}
+.flex span{
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  font-size: 17px;
+  color: var(--black);
+}
+
+.inputbox .box{
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--light-bg);
+  padding: 12px 14px;
+  font-size: 17px;
+  color: var(--black);
+  margin-top: 10px;
+}
+
+#updateprofile .message{
+    margin: 5px 0;
+    width: 100%; 
+    padding: 10px;
+    text-align: center;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+@media (max-width:650px) {
+  #updateprofile .flex{
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .inputbox{
+    width:100%;
+  }
+}
